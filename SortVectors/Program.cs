@@ -14,6 +14,10 @@ namespace SortVectors
 
             Console.WriteLine("Il valore minimo è: " + mi);
 
+            int ma = Massimo(vett);
+
+            Console.WriteLine("Il valore massimo è: " + ma);
+
         }
 
         static void Ordina(int [] v)
@@ -24,6 +28,11 @@ namespace SortVectors
         static int Minimo(int [] v)
         {
             return v[0];
+        }
+
+        static int Massimo(int[] v)
+        {
+            return v[9];
         }
     }
 }
