@@ -10,14 +10,8 @@ namespace SortVectors
 
             Ordina(vett);
 
-            int mi = Minimo(vett);
-
-            Console.WriteLine("Il valore minimo è: " + mi);
-
-            int ma = Massimo(vett);
-
-            Console.WriteLine("Il valore massimo è: " + ma);
-
+            for (int i = 0; i < 10; i++)
+                Console.WriteLine(vett[i]);
         }
 
         static void Ordina(int [] v)
@@ -25,14 +19,5 @@ namespace SortVectors
             Array.Sort(v);
         }
 
-        static int Minimo(int [] v)
-        {
-            return v[0];
-        }
-
-        static int Massimo(int[] v)
-        {
-            return v[9];
-        }
     }
 }
